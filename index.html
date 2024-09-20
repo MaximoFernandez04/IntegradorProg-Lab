@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Integrador</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container__header__principal">
+        <div class="container__hearder">
+          <div class="buscador" id="buscador_id">
+            <input type="text" placeholder="Ingrese un elemento" class="input__header">
+            <button>Buscar</button>
+          </div>
+          <div class="agregar__elemento" id="agregar_elementos">
+            <button>Agregar Elemento</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="categoria__comida">
+        <div class="categorias">
+          <h2 class="h2__categorias">Categorias</h2>
+          <div id="categorias_desplegable">
+            <ul id="listFilter" class="lista__categorias" >
+            </ul>
+          </div>
+        </div>
+        <div class="card" id="card">
+              
+        </div>
+      </section>
+
+      <!--========POPUP===========-->
+      <section class="popUpContainer__principal" id="modalPopUp">
+        <div class="popUpContainer">
+          <h2>Agregar o modificar un producto</h2>
+          <div class="inputs__popUp">
+            <input type="text" placeholder="Ingrese un producto" id="input_popUp_producto">
+            <input type="text" placeholder="Ingrese la url de la imagen" id="input_popUp_imagen">
+            <input type="number" name="" placeholder="Ingrese el precio" id="input_popUp_precio">
+            <select name="" id="select_popUp" class="select_PopUp">
+              <option value="hamburguesa">Hamburguesas</option>
+              <option value="papa">Papas</option>
+              <option value="gaseosa">Gaseosas</option>
+            </select>
+          </div>
+          <div class="buttons__popUp">
+            <button id="button_popUp_cancelar">Cancelar</button>
+            <button type="submit" id="button_popUp_aceptar">Aceptar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+
+
+
+
+  </body>
+    <script type="module" src="/main.js"></script>
+</html>
